@@ -9,34 +9,35 @@
 // @namespace http://morishige.jp/
 // @description Auto click for Exchange CityVille.
 // @author MORISHIGE Yoshitaka
-// @version 0.1
+// @version 0.2
 // @released 2012-03-18
-// @updated 2012-03-18
+// @updated 2012-03-19
 // @include http://gamersunite.coolchaser.com/games/cityville/link_exchange
+// @include https://apps.facebook.com/cityville/Reward.php?*
 // ==/UserScript==
 
 // 収集したいアイテム名を下記に列挙します。
 var targets = [
-	'Energy',
-	'Spain Passport Stamp',
-	'US Passport Stamp',
-	'Japan Passport Stamp',
-	'UK passport stamps',
-	'Dubai passport stamps',
+	// 'Energy',
+	// 'Spain Passport Stamp',
+	// 'US Passport Stamp',
+	// 'Japan Passport Stamp',
+	// 'UK passport stamps',
+	// 'Dubai passport stamps',
 	'Zoning Permit',
-	// 'Green Shamrock',
-	// 'Red Shamrock',
-	'Orange Shamrock',
-	'Yellow Shamrock',
-	'Blue Shamrock',
-	'Purple Shamrock'
+	'Green Shamrock',
+	'Red Shamrock',
+	// 'Orange Shamrock',
+	// 'Yellow Shamrock',
+	// 'Blue Shamrock',
+	// 'Purple Shamrock'
 ];
 
 // クリック間隔 [秒]
 var INTERVAL_CLICK = 15;
 
 // リロード間隔 [秒]
-var INTERVAL_RELOAD = 3 * 60;
+var INTERVAL_RELOAD = 1 * 60;
 
 // 以下、編集は必要有りません。
 
@@ -108,6 +109,14 @@ var reload = function() {
 		window.location.reload();
 	}, INTERVAL_RELOAD * 1000);
 }
-
-checkTargets();
-click();
+console.log(document.URL);
+if (document.URL.indexOf("cityville/Reward.php") === -1) {
+	checkTargets();
+	click();
+} else {
+	if (window.innerWidth == 640 && window.innerHeight == 500) {
+		setTimeout(function() {
+			window.close();
+		}, INTERVAL_CLICK * 1000);
+	}
+}
