@@ -1,5 +1,4 @@
 // Check active users for CityVille
-// version 0.2 BETA :D
 // 2012/03/11
 // Copyright (c) 2012, MORISHIGE Yoshitaka
 // Released under the MIT license
@@ -9,6 +8,10 @@
 // @name	CityVille_CheckActiveUser
 // @namespace http://morishige.jp/
 // @description check active users for CityVille on facebook.
+// @author MORISHIGE Yoshitaka
+// @version 0.2
+// @released 2012-03-11
+// @updated 2012-03-11
 // @include https://*.cityville.zynga.com/neighbors.php*
 // @include https://cityville.zynga.com/neighbors.php*
 // ==/UserScript==

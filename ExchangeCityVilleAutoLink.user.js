@@ -1,5 +1,4 @@
 // Auto click for Exchange CityVille
-// version 0.1 BETA :D
 // 2012/03/18
 // Copyright (c) 2012, MORISHIGE Yoshitaka
 // Released under the MIT license
@@ -9,26 +8,29 @@
 // @name	AutoClickForExchangeCityVille
 // @namespace http://morishige.jp/
 // @description Auto click for Exchange CityVille.
+// @author MORISHIGE Yoshitaka
+// @version 0.1
+// @released 2012-03-18
+// @updated 2012-03-18
 // @include http://gamersunite.coolchaser.com/games/cityville/link_exchange
 // ==/UserScript==
 
 // 収集したいアイテム名を下記に列挙します。
 var targets = [
-	// 'Energy',
-	// 'Spain Passport Stamp',
-	// 'US Passport Stamp',
-	// 'Japan Passport Stamp',
-	// 'UK passport stamps',
-	// 'Dubai passport stamps',
+	'Energy',
+	'Spain Passport Stamp',
+	'US Passport Stamp',
+	'Japan Passport Stamp',
+	'UK passport stamps',
+	'Dubai passport stamps',
 	'Zoning Permit',
 	// 'Green Shamrock',
 	// 'Red Shamrock',
-	// 'Orange Shamrock',
+	'Orange Shamrock',
 	'Yellow Shamrock',
 	'Blue Shamrock',
 	'Purple Shamrock'
 ];
-
 
 // クリック間隔 [秒]
 var INTERVAL_CLICK = 15;
