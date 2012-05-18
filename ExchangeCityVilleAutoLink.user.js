@@ -24,11 +24,11 @@ var targets = [
 	// 'Japan Passport Stamp',
 	// 'UK passport stamps',
 	// 'Dubai passport stamps',
-	'Zoning Permit',
-	'Green Shamrock',
-	'Red Shamrock',
-	// 'Orange Shamrock',
-	// 'Yellow Shamrock',
+	'Parrot',
+	'Blue Jay',
+	'Goldfinch',
+	'Cardinal',
+	'Flamingo',
 	// 'Blue Shamrock',
 	// 'Purple Shamrock'
 ];
