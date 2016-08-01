@@ -25,10 +25,10 @@ var targets = [
 	// 'UK passport stamps',
 	// 'Dubai passport stamps',
 	'Zoning Permit',
-	'Green Shamrock',
-	'Red Shamrock',
-	// 'Orange Shamrock',
-	// 'Yellow Shamrock',
+	'Parrot',
+	'Blue Jay',
+	'Cardinal',
+	'Goldfinch',
 	// 'Blue Shamrock',
 	// 'Purple Shamrock'
 ];
